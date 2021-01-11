@@ -6,19 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product-details.component.scss']
 })
 export class ProductDetailsComponent implements OnInit {
-
+  ProductImg;
+  SmallImg;
   constructor() { }
 
   ngOnInit(): void {
-    window.scrollTo(0, 0);
+    this.ProductImg = document.getElementById("ProductImg");
+    this.SmallImg = document.getElementsByClassName("small-img");
   }
 
-  abc(i) {
-    var ProductImg = document.getElementById("ProductImg");
-    var SmallImg = document.getElementsByClassName("small-img");
-    SmallImg[i].onclick =  () => {
-      ProductImg.src = SmallImg[i].src;
-      console.log("Manoj", ProductImg.src)
+  abc() {
+    for (let i = 0; i < 4; i++) {
+      this.SmallImg[i].onclick = () => {
+        this.ProductImg.src = this.SmallImg[i].src;
+      }
     }
   }
 }
