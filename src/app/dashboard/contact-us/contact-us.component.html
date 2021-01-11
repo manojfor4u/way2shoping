@@ -1,0 +1,43 @@
+<div class="account-page">
+	<div class="container">
+		<div class="row">
+			<div class="col-2">
+				<figure><img src="{{ 'images/image1.png' | assetsPath}}" alt="icon" width="100%"></figure>
+			</div>
+			<div class="col-2">
+				<div class="form-container">
+					<h5>Contact Us</h5>
+					<div class="form-btn">
+						<form [formGroup]="contactForm" style="margin-left: -125px;margin-top: -50px;">
+							<div class="div_info">
+								<input type="text" class="form-control" placeholder="Name" formControlName="name">
+								<control-messages style="margin-top: -10px;" [control]="contactForm.controls.name"
+									[inputElmControl]="inputControls.contact.name">
+								</control-messages>
+							</div>
+							<div class="div_info">
+								<input type="password" class="form-control" placeholder="Email" formControlName="email">
+								<control-messages [control]="contactForm.controls.email"
+									[inputElmControl]="inputControls.contact.email">
+								</control-messages>
+							</div>
+							<div class="div_info">
+								<input type="text" class="form-control" placeholder="Mobile Number" formControlName="mobile">
+								<control-messages [control]="contactForm.controls.mobile" style="margin-top: -10px;"
+									[inputElmControl]="inputControls.contact.mobile">
+								</control-messages>
+							</div>
+							<div class="div_info">
+								<input type="password" class="form-control" placeholder="Address" formControlName="address">
+								<control-messages [control]="contactForm.controls.address"
+									[inputElmControl]="inputControls.contact.address">
+								</control-messages>
+							</div>
+							<button type="button" class="btn" (click)="submit()">Submit</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
