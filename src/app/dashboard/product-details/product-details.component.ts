@@ -13,6 +13,7 @@ export class ProductDetailsComponent implements OnInit {
   ngOnInit(): void {
     this.ProductImg = document.getElementById("ProductImg");
     this.SmallImg = document.getElementsByClassName("small-img");
+    window.scrollTo(0, 0);
   }
 
   abc() {
