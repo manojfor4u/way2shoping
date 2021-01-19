@@ -7,7 +7,7 @@ import { HeaderComponent } from './layout-component/header/header.component';
 import { FooterComponent } from './layout-component/footer/footer.component';
 import { AssetsPathPipe } from './pipes/assets-path.pipe';
 import { InputControlMessagesComponent } from './validations/InputControlMessagesComponent';
-
+import { EcommerceService} from '../shared/services/ecommerce.service';
 @NgModule({
   declarations: [
     MainComponent,
@@ -22,6 +22,6 @@ import { InputControlMessagesComponent } from './validations/InputControlMessage
     SharedRoutingModule,
   ],
   exports:[AssetsPathPipe,InputControlMessagesComponent],
-  providers:[AssetsPathPipe]
+  providers:[AssetsPathPipe,EcommerceService]
 })
 export class SharedModule { }

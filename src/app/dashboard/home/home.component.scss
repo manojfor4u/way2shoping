@@ -1,5 +1,9 @@
-.carasaul_info{
-    background: red;
-    margin-top: 50px;
-    height: 200px;
+.box_info{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s;
+}
+
+.col-3:hover img{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    border-radius: 20px;
 }

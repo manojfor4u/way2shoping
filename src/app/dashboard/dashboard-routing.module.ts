@@ -11,6 +11,8 @@ import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AboutComponent } from './about/about.component';
+import { TestComponent } from './test/test.component';
+
 const routes: Routes = [
   {
     path: '',
@@ -24,7 +26,8 @@ const routes: Routes = [
       { path :'login', component:LoginComponent },
       { path :'registration', component:RegistrationComponent },
       { path :'contact', component:ContactUsComponent },
-      { path :'about', component:AboutComponent }
+      { path :'about', component:AboutComponent },
+      { path : 'test', component :TestComponent} 
     ]
   }
 ];

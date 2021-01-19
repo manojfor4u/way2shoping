@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { SharedModule} from '../app/shared/shared.module';
 import { DashboardModule} from '../app/dashboard/dashboard.module';
 import { HttpClientModule } from '@angular/common/http';
-
+import { ToastrModule } from 'ngx-toastr';
+import { NgxSpinnerModule } from "ngx-spinner";
 @NgModule({
   declarations: [
     AppComponent
@@ -18,7 +19,9 @@ import { HttpClientModule } from '@angular/common/http';
     DashboardModule,
     ReactiveFormsModule,
     FormsModule ,
-    HttpClientModule
+    HttpClientModule,
+    ToastrModule.forRoot(),
+    NgxSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

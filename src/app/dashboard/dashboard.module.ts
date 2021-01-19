@@ -12,8 +12,9 @@ import { RegistrationComponent } from './registration/registration.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AboutComponent } from './about/about.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { TestComponent } from './test/test.component';
 @NgModule({
-  declarations: [HomeComponent, AccountComponent, ProductsComponent, ProductDetailsComponent, AddToCartComponent, LoginComponent, RegistrationComponent, ContactUsComponent, AboutComponent],
+  declarations: [HomeComponent, AccountComponent, ProductsComponent, ProductDetailsComponent, AddToCartComponent, LoginComponent, RegistrationComponent, ContactUsComponent, AboutComponent, TestComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,
